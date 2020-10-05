@@ -83,8 +83,14 @@ function App() {
         )}
       </div>
       <div className="footer">
-        <a href="https://www.github.com/praaatik">
-          <img src={github} width="30px" height="30px" className="github-icon"/>
+        <a href="https://github.com/praaatik/pi-peekaboo">
+          <img
+            src={github}
+            width="30px"
+            height="30px"
+            className="github-icon"
+            alt="github-icon-for-repo"
+          />
         </a>
       </div>
     </div>
