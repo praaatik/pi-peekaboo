@@ -8,6 +8,8 @@ This has been inspired from [The Coding Train](https://thecodingtrain.com/), par
 
 The app is hosted on [Heroku](https://devcenter.heroku.com/) link for which is https://shrouded-springs-15406.herokuapp.com/
 
+![Demo-Screenshot](https://raw.githubusercontent.com/praaatik/pi-peekaboo/master/public/demo-screenshot.PNG?token=AK2AKSVCXXF3L4FWAXWWNU27PM7DC)
+
 ## Want to run the app locally instead?
 
 You need to have [Node.js](https://nodejs.org/en/) installed on your machine beforehand, check out [this link](https://nodejs.org/en/download/package-manager/) in case you haven't.
