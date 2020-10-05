@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
 *,
 *::before,
 *::after {
@@ -43,13 +45,26 @@ body {
   transition: 250ms ease-in all;
 }
 
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 3.5em;
+  background: black;
+  text-transform: capitalize;
+  font-family: "Pacifico", cursive;
+}
+
 .footer {
   position: absolute;
   display: flex;
   justify-content: center;
-  flex-direction: rows;
-  left: 0;
+  width: 100%;
   bottom: 0;
+  left: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -60,21 +75,12 @@ body {
 
   .input {
     font-size: 2.2em;
-    margin-top: 5%;
+    margin-top: 35%;
   }
 
   .output {
     font-size: 2em;
     transition: 250ms ease-in all;
-  }
-  .footer {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 1em;
   }
 
   .github-icon {
@@ -88,5 +94,28 @@ body {
 
   .info {
     font-size: 0.8em;
+  }
+
+  .header {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 3.5em;
+    background: black;
+    text-transform: capitalize;
+    font-family: "Pacifico", cursive;
+  }
+
+  .footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em;
   }
 }

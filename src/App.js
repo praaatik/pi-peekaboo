@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import Footer from "./components/Footer"
+import Header from "./components/Header"
 import "./App.css";
-import github from "./github-icon.svg";
+
 
 const url = "https://uploadbeta.com/api/pi/?cached&n=1000000";
 var piDigits = "";
@@ -48,6 +50,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <input
         type="text"
         value={input}
@@ -64,40 +67,30 @@ function App() {
         {output === "" ? (
           <p>Not Found!</p>
         ) : (
-          <div>
-            {n === -1 ? (
-              <p>
-                This string does not occur in the first 1 Million digits of Pi!
-              </p>
-            ) : (
-              <p>
-                This string occurs at location{" "}
-                <span style={{ color: " #222f3e" }}>{n + 1}</span>
-              </p>
-            )}
+            <div>
+              {n === -1 ? (
+                <p>
+                  This string does not occur in the first 1 Million digits of Pi!
+                </p>
+              ) : (
+                  <p>
+                    This string occurs at location{" "}
+                    <span style={{ color: " #222f3e" }}>{n + 1}</span>
+                  </p>
+                )}
 
-            <p>
-              {"..." + digitsBefore}{" "}
-              <span style={{ color: " #222f3e" }}>{input}</span>{" "}
-              {digitsAfter + "..."}
-            </p>
-          </div>
-        )}
+              <p>
+                {"..." + digitsBefore}{" "}
+                <span style={{ color: " #222f3e" }}>{input}</span>{" "}
+                {digitsAfter + "..."}
+              </p>
+            </div>
+          )}
         <p className="info">
           Searches from the first digit after the decimal point
         </p>
       </div>
-      <div className="footer">
-        <a href="https://github.com/praaatik/pi-peekaboo">
-          <img
-            src={github}
-            width="30px"
-            height="30px"
-            className="github-icon"
-            alt="github-icon-for-repo"
-          />
-        </a>
-      </div>
+      <Footer />
     </div>
   );
 }
