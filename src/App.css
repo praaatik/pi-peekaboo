@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50%;
+  margin-bottom: 50%;
+  margin-left: 2em;
+  margin-right: 2em;
+  background: #ee5253;
+  color: whitesmoke;
+  font-family: "Bebas Neue", cursive;
+}
+
+.input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid black;
+  padding-top: 2em;
+  padding-right: 4em;
+  position: relative;
+  font-family: "Bebas Neue", cursive;
+  background: #ee5253;
+  color: #222f3e;
+  font-size: 3em;
+  overflow: hidden;
+}
+
+.output {
+  text-align: center;
+  font-size: larger;
+  font-size: 1.5em;
+  overflow: hidden;
+}
+
+.footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: rows;
+  left: 0;
+  bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin-top: 0%;
+    overflow: hidden;
+  }
+
+  .input {
+    font-size: 2.2em;
+    margin-top: 5%;
+  }
+
+  .output {
+    font-size: 2em;
+  }
+  .footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em;
+  }
+
+  .github-icon {
+    transition: 150ms ease-in all;
+  }
+
+  .github-icon:hover {
+    transform: scale(1.1);
+    transition: 250ms ease-in all;
+  }
+}
