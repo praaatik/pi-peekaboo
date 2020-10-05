@@ -21,7 +21,7 @@ body {
 }
 
 .input {
-  width: 100%;
+  width: 100% !important;
   border: 0;
   border-bottom: 2px solid black;
   padding-top: 2em;
@@ -31,7 +31,8 @@ body {
   background: #ee5253;
   color: #222f3e;
   font-size: 3em;
-  overflow: hidden;
+  text-overflow: ellipsis;
+  /* overflow: visible; */
 }
 
 .output {
