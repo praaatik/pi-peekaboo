@@ -39,6 +39,7 @@ body {
   font-size: larger;
   font-size: 1.5em;
   overflow: hidden;
+  transition: 250ms ease-in all;
 }
 
 .footer {
@@ -63,6 +64,7 @@ body {
 
   .output {
     font-size: 2em;
+    transition: 250ms ease-in all;
   }
   .footer {
     position: absolute;
@@ -81,5 +83,9 @@ body {
   .github-icon:hover {
     transform: scale(1.1);
     transition: 250ms ease-in all;
+  }
+
+  .info {
+    font-size: 0.8em;
   }
 }

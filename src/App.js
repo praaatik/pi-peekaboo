@@ -13,10 +13,11 @@ var n = NaN;
 // Referred from https://helloacm.com/pi/
 fetch(url)
   .then((response) => response.json())
-  .then((data) => (piDigits = data.substring(1)));
+  .then((data) => (piDigits = data.substring(2)));
 
 function App() {
   const [input, setInput] = useState("");
+  console.log(piDigits);
 
   function findInPi(input) {
     //Searching for the input digits in PiDigits
@@ -24,6 +25,7 @@ function App() {
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf
 
     n = piDigits.indexOf(input);
+
     digitsAfter = "";
     digitsBefore = "";
 
@@ -69,8 +71,8 @@ function App() {
               </p>
             ) : (
               <p>
-                The string occurs at location{" "}
-                <span style={{ color: " #222f3e" }}>{n}</span>
+                This string occurs at location{" "}
+                <span style={{ color: " #222f3e" }}>{n + 1}</span>
               </p>
             )}
 
@@ -81,6 +83,9 @@ function App() {
             </p>
           </div>
         )}
+        <p className="info">
+          Searches from the first digit after the decimal point
+        </p>
       </div>
       <div className="footer">
         <a href="https://github.com/praaatik/pi-peekaboo">
