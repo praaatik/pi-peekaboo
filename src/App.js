@@ -62,17 +62,17 @@ function App() {
       />
 
       <div className="output">
-        {output === "" ? (
-          <p>Not Found!</p>
+        {input === "" ? (
+          <p>Enter a sequence you'd like to look in Pi for!</p>
         ) : (
           <div>
             {n === -1 ? (
               <p>
-                This string does not occur in the first 1 Million digits of Pi!
+                This sequence does not occur in the first 1 Million digits of Pi!
               </p>
             ) : (
               <p>
-                This string occurs at location{" "}
+                This sequence occurs at location{" "}
                 <span style={{ color: " #222f3e" }}>{n + 1}</span>
               </p>
             )}
