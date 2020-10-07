@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Footer from "./components/Footer"
-import Header from "./components/Header"
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import "./App.css";
 
-
 const url = "https://uploadbeta.com/api/pi/?cached&n=1000000";
+
 var piDigits = "";
 var digitsBefore = ""; //the digits before the ones found in Pi
 var digitsAfter = ""; //the digits after the ones found in Pi
@@ -19,7 +19,6 @@ fetch(url)
 
 function App() {
   const [input, setInput] = useState("");
-  console.log(piDigits);
 
   function findInPi(input) {
     //Searching for the input digits in PiDigits
@@ -40,8 +39,7 @@ function App() {
       }
       digitsBefore = digitsBefore.split("").reverse("").join("");
       output = "..." + digitsBefore + " " + input + " " + digitsAfter + "...";
-      console.log(input);
-      // console.log(output);
+
       return output;
     } else {
       return "";
@@ -67,25 +65,25 @@ function App() {
         {output === "" ? (
           <p>Not Found!</p>
         ) : (
-            <div>
-              {n === -1 ? (
-                <p>
-                  This string does not occur in the first 1 Million digits of Pi!
-                </p>
-              ) : (
-                  <p>
-                    This string occurs at location{" "}
-                    <span style={{ color: " #222f3e" }}>{n + 1}</span>
-                  </p>
-                )}
-
+          <div>
+            {n === -1 ? (
               <p>
-                {"..." + digitsBefore}{" "}
-                <span style={{ color: " #222f3e" }}>{input}</span>{" "}
-                {digitsAfter + "..."}
+                This string does not occur in the first 1 Million digits of Pi!
               </p>
-            </div>
-          )}
+            ) : (
+              <p>
+                This string occurs at location{" "}
+                <span style={{ color: " #222f3e" }}>{n + 1}</span>
+              </p>
+            )}
+
+            <p>
+              {"..." + digitsBefore}{" "}
+              <span style={{ color: " #222f3e" }}>{input}</span>{" "}
+              {digitsAfter + "..."}
+            </p>
+          </div>
+        )}
         <p className="info">
           Searches from the first digit after the decimal point
         </p>
