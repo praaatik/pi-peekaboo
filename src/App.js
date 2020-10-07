@@ -57,7 +57,7 @@ function App() {
           setInput(e.target.value);
         }}
         className="input"
-        placeholder="Enter string"
+        placeholder="Enter sequence"
         name="input"
       />
 
@@ -85,7 +85,7 @@ function App() {
           </div>
         )}
         <p className="info">
-          Searches from the first digit after the decimal point
+          Searches from the first digit after the decimal point in the first One Million digits
         </p>
       </div>
       <Footer />
