@@ -26,6 +26,8 @@ function App() {
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf
 
     n = piDigits.indexOf(input);
+    var isnum = /^\d+$/.test(n);
+    console.log(isnum);
 
     digitsAfter = "";
     digitsBefore = "";
@@ -68,7 +70,8 @@ function App() {
           <div>
             {n === -1 ? (
               <p>
-                This sequence does not occur in the first 1 Million digits of Pi!
+                This sequence does not occur in the first 1 Million digits of
+                Pi!
               </p>
             ) : (
               <p>
@@ -85,7 +88,8 @@ function App() {
           </div>
         )}
         <p className="info">
-          Searches from the first digit after the decimal point in the first One Million digits
+          Searches from the first digit after the decimal point in the first One
+          Million digits
         </p>
       </div>
       <Footer />
