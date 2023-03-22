@@ -6,7 +6,7 @@ This has been inspired from [The Coding Train](https://thecodingtrain.com/), par
 
 ## Try a demo
 
-The app is hosted on [Heroku](https://devcenter.heroku.com/) link for which is https://shrouded-springs-15406.herokuapp.com/
+The app is hosted on [Vercel](https://vercel.com/) link for which is https://pi-peekaboo.vercel.app/
 
 ![Demo-Screenshot](https://raw.githubusercontent.com/praaatik/pi-peekaboo/master/public/demo-screenshot.PNG?token=AK2AKSVCXXF3L4FWAXWWNU27PM7DC)
 
